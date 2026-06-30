@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html>
-
-<head lang="en" charset="UTF-8" viewport="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackReady</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
     <body>
 
@@ -19,12 +26,12 @@
 
         <main>
 
-            <section id="hero">
+            <section id="hero" class="margin-bottom-80">
                 <h1>TrackReady</h1>
                 <p>Find your perfect trackday</p>
             </section>
 
-            <section id="search">
+            <section id="search" class="margin-bottom-80">
                <form action="#">
                     <h2>Find your perfect trackday</h2>
 
@@ -33,21 +40,21 @@
                         <option value="beginner">Beginner</option>
                         <option value="intermediate">Intermediate</option>
                         <option value="advanced">Advanced</option>
-                        <option value="advanced">Sports rider</option>
+                        <option value="sport-rider">Sports rider</option>
                     </select>
 
                     <label for="date">When</label>
                     <select name="date" id="date">
-                        <option value="ASAP">ASAP</option>
-                        <option value="This season">This 2026 season</option>
-                        <option value="Next Season ">Next season</option>
+                        <option value="asap">ASAP</option>
+                        <option value="this-season">This 2026 season</option>
+                        <option value="next-season">Next season</option>
                     </select>
 
                     <label for="location">Where</label>
                     <select name="location" id="location">
-                        <option value="ASAP">the Netherlands</option>
-                        <option value="This season">Belgium & Germany</option>
-                        <option value="Next Season ">EU</option>
+                        <option value="netherlands">The Netherlands</option>
+                        <option value="belgium-germany">Belgium & Germany</option>
+                        <option value="eu">EU</option>
                     </select>
                     
                     <input type="submit" value="Submit">
@@ -55,14 +62,14 @@
             </section>
 
 
-            <section id="featured">
+            <section id="featured" class="margin-bottom-80">
                 <h2>Featured trackday in Portimão</h2>
                 <p>Last spots left</p>
                 <button type="button">Sign up</button>
             </section>
 
 
-            <section id="curated-trackdays">
+            <section id="curated-trackdays" class="margin-bottom-80">
                 <h2>Curated trackdays</h2>
                 <article class="curated-trackday-card">
                     <h3>Learn fundamentals</h3>
@@ -85,15 +92,15 @@
             </section>
 
 
-            <section id="checklist">
+            <section id="checklist" class="margin-bottom-80">
                 <h2>Trackday checklist</h2>
                 <p>Use our essential checklist, or create and modify your own and share it with friends</p>
                 <button type="button">Try for free</button>
             </section>
 
-            <section id="performance parts">
+            <section id="performance-parts">
                 <h2>Performance parts</h2>
-                <p>Gear for the esstials</p>
+                <p>Gear for the essentials</p>
                 <button type="button">Shop now</button>
             </section>
            
