@@ -14,24 +14,26 @@
     <body>
 
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Trackdays</a></li>
-                    <li><a href="#">Checklist</a></li>
-                    <li><a href="#">Performance parts</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trackdays</a></li>
+                        <li><a href="#">Checklist</a></li>
+                        <li><a href="#">Performance parts</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <main>
+        <main class="container">
 
-            <section id="hero" class="margin-bottom-80">
+            <section id="hero" class="section-spacing">
                 <h1>TrackReady</h1>
                 <p>Find your perfect trackday</p>
             </section>
 
-            <section id="search" class="margin-bottom-80">
+            <section id="search" class="section-spacing">
                <form action="#">
                     <h2>Find your perfect trackday</h2>
 
@@ -62,43 +64,46 @@
             </section>
 
 
-            <section id="featured" class="margin-bottom-80">
+            <section id="featured" class="section-spacing">
                 <h2>Featured trackday in Portimão</h2>
                 <p>Last spots left</p>
                 <button type="button">Sign up</button>
             </section>
 
 
-            <section id="curated-trackdays" class="margin-bottom-80">
+            <section id="curated-trackdays" class="section-spacing">
                 <h2>Curated trackdays</h2>
-                <article class="curated-trackday-card">
-                    <h3>Learn fundamentals</h3>
-                    <p>Learn on a small track. Best suited before stepping into a full circuit, with focus on bodyposition and controls.</p>
-                    <button type="button">Check it out</button>
-                </article>
+                
+                <div class="curated-trackday-list">
+                    <article class="curated-trackday-card">
+                        <h3>Learn fundamentals</h3>
+                        <p>Learn on a small track. Best suited before stepping into a full circuit, with focus on bodyposition and controls.</p>
+                        <button type="button">Check it out</button>
+                    </article>
 
-                <article class="curated-trackday-card">
-                    <h3>Plan your first trackday</h3>
-                    <p>Skip the fundamentals or just did one? checkout tracksdays for you</p>
-                    <button type="button">Discover</button>
-                </article>
+                    <article class="curated-trackday-card">
+                        <h3>Plan your first trackday</h3>
+                        <p>Check out trackdays suited for you.</p>
+                        <button type="button">Discover</button>
+                    </article>
 
-                <article class="curated-trackday-card">
-                    <h3>Trackdays with personal coaching</h3>
-                    <p>See which trackdays offer 1:1 coaching sessions.</p>
-                    <button type="button">Find out more</button>
-                </article>
+                    <article class="curated-trackday-card">
+                        <h3>Trackdays with personal coaching</h3>
+                        <p>See which trackdays offer 1:1 coaching sessions.</p>
+                        <button type="button">Find out more</button>
+                    </article>
+                </div>
 
             </section>
 
 
-            <section id="checklist" class="margin-bottom-80">
+            <section id="checklist" class="section-spacing">
                 <h2>Trackday checklist</h2>
                 <p>Use our essential checklist, or create and modify your own and share it with friends</p>
                 <button type="button">Try for free</button>
             </section>
 
-            <section id="performance-parts">
+            <section id="performance-parts" class="section-spacing">
                 <h2>Performance parts</h2>
                 <p>Gear for the essentials</p>
                 <button type="button">Shop now</button>
@@ -107,7 +112,9 @@
         </main> 
 
         <footer>
-            <p>Made by Luciano</p>
+            <div class="conainer">
+              <p>Made by Luciano</p>
+            </div>
         </footer>
 
     </body>
