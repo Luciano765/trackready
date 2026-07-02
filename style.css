@@ -12,9 +12,9 @@
 
 :root {
     /* Colors */
-    --color-text-primary: #333;
-    --color-text-secondary: #555;
-    --color-background: #fff;
+    --color-text-black: #333;
+    --color-text-grey: #555;
+    --color-white: #fff;
     --color-accent: firebrick;
 
     /* Typography */
@@ -26,6 +26,7 @@
     --font-size-xl: 3rem;
 
     --font-weight-normal: 300;
+    --font-weight-medium: 400;
     --font-weight-bold: 600;
 
     /* Spacing */
@@ -80,37 +81,40 @@ h2 {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
-    color: var(--color-text-primary);
+    color: var(--color-text-black);
 }
 
 h3 {
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-normal);
     line-height: 1.4;
-    color: var(--color-text-primary);
+    color: var(--color-text-black);
 }
 
 p {
     font-size: var(--font-size-sm);
     line-height: 1rem;
-    color: var(--color-text-secondary);
+    color: var(--color-text-grey);
 }
 
 label {
     font-size: var(--font-size-sm);
     line-height: 1rem;
-    color: var(--color-text-secondary);
+    color: var(--color-text-grey);
     text-transform: uppercase;
     font-weight: var(--font-weight-bold);
     letter-spacing: 1.2px;
 }
 
-
+/* ----------------------------------- */
 /* ----------Sections---------------- */
+/* ----------------------------------- */
 
 .section-spacing {
     margin-block-end: var(--space-2xl);
 }
+
+/* ---------Curated trackdays---------------- */
 
 .curated-trackday-list {
     display: flex;
@@ -119,9 +123,52 @@ label {
 }
 
 .curated-trackday-card {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    padding: var(--space-md);
-    border: 1px solid var(--color-text-secondary);
+    padding: var(--space-sm)
+    border: 1px solid var(--color-text-grey);
+    
 }
+
+/* ----------Compare orgs table---------------- */
+
+#compare-orgs table{
+    border: 1px solid var(--color-text-grey);
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse; 
+}
+
+#compare-orgs th {
+    background-color: var(--color-text-black);
+    color: var(--color-white);
+    font-weight: var(--font-weight-medium);
+    text-align: left;
+    padding: 10px 20px 4px 4px;
+}
+
+#compare-orgs td {
+    font-size: var(--font-size-sm);
+    padding: 12px 4px 12px 4px;
+}
+
+#compare-orgs tr {
+    border-bottom: 1px solid var(--color-text-grey);
+}
+
+/* ----------Blog--------------- */
+
+.guide-card {
+    border: 1px solid var(--color-text-grey);
+    padding: var(--space-sm);
+    gap: var(--space-sm);       
+}
+
+.guide-card {
+    border: 1px solid var(--color-text-grey);
+    padding: var(--space-sm);
+}
+
 
 
