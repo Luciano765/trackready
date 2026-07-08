@@ -6,6 +6,7 @@
     <title>TrackReady</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,8 +67,8 @@
 
             <section id="featured" class="section-spacing">
                 <h2>Featured trackday in Portimão</h2>
-                <p>Last spots left</p>
-                <button type="button">Sign up</button>
+                <p id="featuredStatus">Last 2 spots left</p>
+                <button type="button" onclick="signUp()">Sign up</button>
             </section>
 
 
@@ -177,7 +178,6 @@
             <p>Made by Luciano</p>
             </div>
         </footer>
-
     </body>
 
 </html>
